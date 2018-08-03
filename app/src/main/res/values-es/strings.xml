@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Motor2Control</string>
+    <string name="action_settings">Configurar</string>
+    <string name="btnOn">Encender</string>
+    <string name="btnOff">Apagar</string>
+    <string name="TitleMotor1">Motor 1</string>
+    <string name="TitleMotor2">Motor 2</string>
+    <string name="action_about">Información</string>
+    <string name="pref_Title_Telephone">Teléfono</string>
+    <string name="WarningConfigurePhone">Hay que configurar primero el teléfono en la configuración.</string>
+    <string name="pref_Title_SecretKey">Clave Secreta</string>
+    <string name="title_activity_settings">Configuración</string>
+    <string name="pref_title_vibrate">Vibrar</string>
+    <string name="pref_default_SecretKey">ClaveSecreto</string>
+    <string name="btnOpenDoor">Abrir Puerta</string>
+    <string name="txtNo">No</string>
+    <string name="txtYes">Si</string>
+    <string name="txtConfirmationOpenDoor">Estas seguro que quieres abrir la puerta?</string>
+    <string name="TitleDoor">Puerta</string>
+</resources>

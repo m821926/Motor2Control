@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.pj.motor2control.Motor2Control"
+    tools:showIn="@layout/activity_motor2_control">
+
+
+    <TextView
+        android:id="@+id/TitleMotor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/TitleMotor1"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:id="@+id/Status1"
+        android:layout_width="44dp"
+        android:layout_height="47dp"
+        android:layout_below="@id/TitleMotor1"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/cancel" />
+
+    <Button
+        android:id="@+id/btnMotor1On"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnOn"
+        android:layout_alignBottom="@+id/Status1"
+        android:layout_toRightOf="@id/Status1"
+        android:layout_marginLeft="10dp"
+        />
+
+    <Button
+        android:id="@+id/btnMotor1Off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnOff"
+        android:layout_alignBottom="@+id/Status1"
+        android:layout_toRightOf="@id/btnMotor1On"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/TitleMotor2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/Status1"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/TitleMotor2"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/Status2"
+        android:layout_width="44dp"
+        android:layout_height="47dp"
+        android:layout_below="@id/TitleMotor2"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/cancel" />
+
+    <Button
+        android:id="@+id/btnMotor2On"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnOn"
+        android:layout_marginLeft="10dp"
+        android:layout_alignTop="@+id/Status2"
+        android:layout_toStartOf="@+id/btnMotor2Off" />
+
+
+
+    <Button
+        android:id="@+id/btnMotor2Off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnOff"
+        android:layout_alignBottom="@+id/Status2"
+        android:layout_toEndOf="@+id/btnMotor1On"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/txtLog"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:text=""
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/TitleDoor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/Status2"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/TitleDoor"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+
+    <ImageView
+        android:id="@+id/OpenDoorImage"
+        android:layout_width="44dp"
+        android:layout_height="47dp"
+        android:layout_alignStart="@+id/Status2"
+        android:layout_below="@+id/TitleDoor"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/open_exit_door" />
+
+    <Button
+        android:id="@+id/btnOpenDoor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnOpenDoor"
+        android:layout_marginLeft="10dp"
+        android:layout_alignTop="@+id/OpenDoorImage"
+        android:layout_toRightOf="@id/OpenDoorImage"
+         />
+
+</RelativeLayout>
